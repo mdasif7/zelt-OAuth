@@ -1,20 +1,23 @@
-import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Home from './views/Home'
-import Debug from './views/Debug'
-import './App.css'
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './views/Home';
+import Result from './views/ResultPage';
+import Debug from './views/Debug';
+import './App.css';
 
-function App () {
+function App() {
+  console.log('sss', process.env.REACT_APP_CLIENT_ID);
   return (
     <div className='App'>
       <BrowserRouter>
         <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/results' exact component={Result} />
           <Route path='/debug' exact component={Debug} />
-          <Route path='/' component={Home} />
         </Switch>
       </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

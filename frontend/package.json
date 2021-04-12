@@ -20,7 +20,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "lint": "standard --fix || true" 
+    "lint": "standard --fix || true"
   },
   "eslintConfig": {
     "extends": [
