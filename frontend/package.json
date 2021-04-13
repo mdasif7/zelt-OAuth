@@ -46,5 +46,13 @@
     "postcss": "^7.0.35",
     "standard": "^16.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4"
+  },
+  "jest":{
+    "collectCoverageFrom":[
+      "!src/index.js",
+      "!src/reportWebVitals.js",
+      "!src/views/Debug.jsx",
+      "!src/logo.svg"
+    ]
   }
 }

@@ -8,7 +8,6 @@ function ResultPage() {
     async function fetchData() {
       try {
         const response = (await axios.get('/api/fetchUser')).data;
-        console.log('response :', response);
         setUserDetails(response);
       } catch (error) {
         console.log('error');
@@ -21,7 +20,7 @@ function ResultPage() {
   return (
     <div className='user-details App-header'>
       User Details:
-      <div>
+      <div data-testid="username-id">
         Username: {userDetails && userDetails.login ? userDetails.login : '-'}
       </div>
       <div>

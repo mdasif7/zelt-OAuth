@@ -30,7 +30,7 @@ function Home () {
         <p>
           TODO: Add initialize OAuth flow button here
         </p>
-        <a href={`https://github.com/login/oauth/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}`} className='bg-green-500 py-2 px-4 mb-2'> Github Signin</a>
+        <a  data-testid="github-oauth-link" href={`https://github.com/login/oauth/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}`} className='bg-green-500 py-2 px-4 mb-2'> Github Signin</a>
         <Link to='/debug'>
           <button className='bg-gray-500 p-2 text-sm rounded-md'>
             debug
